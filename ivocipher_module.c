@@ -74,8 +74,8 @@ char *decipher_word(char secret_word[])
 	int i = 0;
     for (; i < sizeof(secret_word) + 1; i++) {
         if (secret_word[i] == ' ') {
-            continue;
-	}
+            secret_word[i] = ' ';
+		}
         secret_word[i] = decipher_char(secret_word[i], 10);
     }
 

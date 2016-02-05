@@ -20,7 +20,11 @@ int main()
 	printf("Try it out together - using two function at once - for character 'e' first: %c\n", decipher_char(cipher_char('e',10), 10));
     char secret_word3[] = "este";
 	printf("Try it out together - using two function at once - for word 'este' then: %s\n", decipher_word(cipher_word(secret_word3))); 
+    char secret_word4[] = "hovno";
+	printf("Try it out together - using two function at once - for word 'hovno' then: %s\n", decipher_word(cipher_word(secret_word4))); 
 
+	char slovo[] = "prdmakovy";
+	printf("Decipher word 'slovo' to get: %s\n", decipher_word(slovo));
 
 	return 0;
 }
