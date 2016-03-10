@@ -1,0 +1,12 @@
+List of tests:
+ -> GuessedWord:
+#    - guessed word is not empty - testGuessedWordNotEmpty
+ -> Player:
+#    - player name is not empty - testPlayerNameNotEmpty
+#    - player has some turns - testPlayerHasSomeTurns
+#    - player entered some letter - testPlayerEnteredSomeLetter
+ -> Game:
+#    - check if player can turn - testPlayerCanTurn
+#    - check if guess was correct - testGuessCorrect
+#    - check if guessed word is displayed properly - testShowLetterLocation
+    - check if game can evaluate properly exit conditions and exit - testGameExit

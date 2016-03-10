@@ -1,0 +1,197 @@
+\hypertarget{game_8h}{\section{game.\-h File Reference}
+\label{game_8h}\index{game.\-h@{game.\-h}}
+}
+
+
+File containing game definition.  
+
+
+{\ttfamily \#include \char`\"{}player.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}guessedword.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGame}{Game}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGame}{Game} $\ast$ \hyperlink{game_8h_a165c8bdaff8170b339c3b16e0db3e2e7}{Create\-Game} (void)
+\item 
+int \hyperlink{game_8h_a96d3e1fff038ce08804926b5d2c2e989}{Player\-Can\-Turn} (\hyperlink{structPlayer}{Player} $\ast$p)
+\item 
+int \hyperlink{game_8h_a1b6b9752afd087e01738791b0b67de14}{Guess\-Correct} (char letter, char $\ast$word, \hyperlink{structGame}{Game} $\ast$g)
+\item 
+void \hyperlink{game_8h_aac829aec39621cf7e164d6af13d50350}{Update\-Revealed\-Word} (char letter, char $\ast$revealedword, const char $\ast$guessedword, int guessedword\-\_\-length)
+\item 
+int \hyperlink{game_8h_af9a55a5e9851c533ea0aae4a091d5e78}{Game\-Exit} (\hyperlink{structGame}{Game} $\ast$g)
+\item 
+void \hyperlink{game_8h_a5c5a3ba260e9008b44f979d9748a8141}{Show\-Revealed\-Word} (\hyperlink{structGame}{Game} $\ast$g)
+\item 
+void \hyperlink{game_8h_ab83fd1833b55007c6b9f3c2c0527c015}{Display\-Gallow} (\hyperlink{structGame}{Game} $\ast$g)
+\item 
+\hypertarget{game_8h_a70cc7bb731ad30aa1110f6637e6a7692}{void {\bfseries Display\-Gallow\-Head} (void)}\label{game_8h_a70cc7bb731ad30aa1110f6637e6a7692}
+
+\item 
+\hypertarget{game_8h_a19544b083516f18bf03c65ad4f98ce76}{void {\bfseries Display\-Gallow\-Rope} (void)}\label{game_8h_a19544b083516f18bf03c65ad4f98ce76}
+
+\item 
+\hypertarget{game_8h_a6a91a43a5230a0948b3d91a06846ddb3}{void {\bfseries Display\-Gallow\-Neck} (void)}\label{game_8h_a6a91a43a5230a0948b3d91a06846ddb3}
+
+\item 
+\hypertarget{game_8h_a11db270d9fcd185cf5349a4497316be9}{void {\bfseries Display\-Gallow\-Legs} (void)}\label{game_8h_a11db270d9fcd185cf5349a4497316be9}
+
+\item 
+\hypertarget{game_8h_a6ca3064f024cc157d6fbca5716fbf25a}{void {\bfseries Display\-Gallow\-Hands} (void)}\label{game_8h_a6ca3064f024cc157d6fbca5716fbf25a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing game definition. \begin{DoxyAuthor}{Author}
+Ivo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10 Mar 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{game_8h_a165c8bdaff8170b339c3b16e0db3e2e7}{\index{game.\-h@{game.\-h}!Create\-Game@{Create\-Game}}
+\index{Create\-Game@{Create\-Game}!game.h@{game.\-h}}
+\subsubsection[{Create\-Game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}$\ast$ Create\-Game (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{game_8h_a165c8bdaff8170b339c3b16e0db3e2e7}
+This method will be used to create \hyperlink{structGame}{Game} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structGame}{Game} object 
+\end{DoxyReturn}
+\hypertarget{game_8h_ab83fd1833b55007c6b9f3c2c0527c015}{\index{game.\-h@{game.\-h}!Display\-Gallow@{Display\-Gallow}}
+\index{Display\-Gallow@{Display\-Gallow}!game.h@{game.\-h}}
+\subsubsection[{Display\-Gallow}]{\setlength{\rightskip}{0pt plus 5cm}void Display\-Gallow (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{game_8h_ab83fd1833b55007c6b9f3c2c0527c015}
+This method will be used to display parts of gallow on wrong guess.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$g} & \hyperlink{structGame}{Game} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\hypertarget{game_8h_af9a55a5e9851c533ea0aae4a091d5e78}{\index{game.\-h@{game.\-h}!Game\-Exit@{Game\-Exit}}
+\index{Game\-Exit@{Game\-Exit}!game.h@{game.\-h}}
+\subsubsection[{Game\-Exit}]{\setlength{\rightskip}{0pt plus 5cm}int Game\-Exit (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{game_8h_af9a55a5e9851c533ea0aae4a091d5e78}
+This method will be used to exit game properly when exit conditions are met.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$g} & \hyperlink{structGame}{Game} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if player runs out turns 
+
+2 if player guessed all the letters -\/ that is he won 
+
+0 if player lost 
+\end{DoxyReturn}
+\hypertarget{game_8h_a1b6b9752afd087e01738791b0b67de14}{\index{game.\-h@{game.\-h}!Guess\-Correct@{Guess\-Correct}}
+\index{Guess\-Correct@{Guess\-Correct}!game.h@{game.\-h}}
+\subsubsection[{Guess\-Correct}]{\setlength{\rightskip}{0pt plus 5cm}int Guess\-Correct (
+\begin{DoxyParamCaption}
+\item[{char}]{letter, }
+\item[{char $\ast$}]{word, }
+\item[{{\bf Game} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{game_8h_a1b6b9752afd087e01738791b0b67de14}
+This method will be used to tell if player's guess was correct or wrong.
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & Letter the player entered \\
+\hline
+{\em $\ast$word} & Guessed word \\
+\hline
+{\em $\ast$g} & \hyperlink{structGame}{Game} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\hypertarget{game_8h_a96d3e1fff038ce08804926b5d2c2e989}{\index{game.\-h@{game.\-h}!Player\-Can\-Turn@{Player\-Can\-Turn}}
+\index{Player\-Can\-Turn@{Player\-Can\-Turn}!game.h@{game.\-h}}
+\subsubsection[{Player\-Can\-Turn}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-Can\-Turn (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{game_8h_a96d3e1fff038ce08804926b5d2c2e989}
+This method will be used to return boolean if player has non-\/zero number of turns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \hyperlink{structPlayer}{Player} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\hypertarget{game_8h_a5c5a3ba260e9008b44f979d9748a8141}{\index{game.\-h@{game.\-h}!Show\-Revealed\-Word@{Show\-Revealed\-Word}}
+\index{Show\-Revealed\-Word@{Show\-Revealed\-Word}!game.h@{game.\-h}}
+\subsubsection[{Show\-Revealed\-Word}]{\setlength{\rightskip}{0pt plus 5cm}void Show\-Revealed\-Word (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{game_8h_a5c5a3ba260e9008b44f979d9748a8141}
+This method will be used to show revealed word to user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$g} & \hyperlink{structGame}{Game} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\hypertarget{game_8h_aac829aec39621cf7e164d6af13d50350}{\index{game.\-h@{game.\-h}!Update\-Revealed\-Word@{Update\-Revealed\-Word}}
+\index{Update\-Revealed\-Word@{Update\-Revealed\-Word}!game.h@{game.\-h}}
+\subsubsection[{Update\-Revealed\-Word}]{\setlength{\rightskip}{0pt plus 5cm}void Update\-Revealed\-Word (
+\begin{DoxyParamCaption}
+\item[{char}]{letter, }
+\item[{char $\ast$}]{revealedword, }
+\item[{const char $\ast$}]{guessedword, }
+\item[{int}]{guessedword\-\_\-length}
+\end{DoxyParamCaption}
+)}}\label{game_8h_aac829aec39621cf7e164d6af13d50350}
+This method will be used to update the revealed word with letters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & Letter the player entered \\
+\hline
+{\em $\ast$revealedword} & Revealed word \\
+\hline
+{\em $\ast$guessedword} & Guessed word \\
+\hline
+{\em guessedword\-\_\-length} & Length of guessed word \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
