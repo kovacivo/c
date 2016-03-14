@@ -1,0 +1,26 @@
+CC = gcc
+LIBS=/usr/lib/i386-linux-gnu
+//CUNIT_LDFLAGS = -lcunit -lcurses
+CUNIT_LDFLAGS = -lcunit -L$(LIBS)
+
+objects = test_hangman
+
+#game.o: game.c game.h
+#		$(CC) -Wall -g -c game.c
+
+player.o: player.c player.h
+		$(CC) -Wall -g -c player.c
+
+guessedword.o: guessedword.c guessedword.h
+		$(CC) -Wall -g -c guessedword.c
+
+
+#all: hangman.o game.o guessedword.o
+#all: guessedword.o player.o test_hangman.o
+all: test_hangman
+		#$(foreach file,$(objects), $(CC) $(file).c hangman.o -o $(file) $(CUNIT_LDFLAGS) ;)
+		#$(foreach file,$(objects), $(CC) $(file).c test_hangman.o -o $(file) $(CUNIT_LDFLAGS) ;)
+		$(CC) test_hangman.c guessedword.o player.o $(CUNIT_LDFLAGS)
+
+clean:
+		rm -f *~ *.o $(objects)
